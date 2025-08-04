@@ -18,6 +18,18 @@ This project addresses 3 key questions:
 
 ---
 
+## Data Cleaning and Preprocessing
+
+Before conducting the analysis, several **preprocessing steps** were applied to ensure **data quality and reliability**:
+- **Correcting time anomalies:**
+  - Adjusted departure and arrival times exceeding '2400' to align with the 24-hour time format, preserving temporal integrity.
+- **Handling missing and placeholder values:**
+  - Systematically excluded values replaced with 'none' or 'null' to prevent inaccuracies.
+- **Outlier management:**
+  - Focused on removing or adjusting extreme values that could skew average delay calculations, ensuring a more representative analysis.
+ 
+---
+
 ## Key Features
 
 - **Exploratory Analysis:** Trends by day-of-week, time-of-day, and seasonality for delay minimization.
@@ -87,5 +99,6 @@ This project addresses 3 key questions:
 
 - Python code for this project can be accessed [here](ST2195_Part_2.ipynb), and R code [here](https://nichkohlas.github.io/US-Flight-Delay-Analysis/220459392_Part_2.html).
 - Written report for this project can be accessed [here](ST2195_Final.pdf). **(View part 2 onwards)**
+- Complete dataset, along with supplementary information and variable descriptions can be downloaded from the [Havard Dataverse](https://doi.org/10.7910/DVN/HG7NV7)
 
 
