@@ -35,7 +35,6 @@ This project addresses 3 key questions:
 - Heatmaps of Average Delays cross the 10 years reveal a consistent pattern:
   - **Highest Delays:** Late-night/ Early-morning flights (00:00 - 04:00) experienced the longest delays.
   - **Lowest Delays:** Mid-morning to Early afternoon (08:00 - 14:00) experienced the shortest delays.
-
 - These patterns remained consistent across all years, making mid-morning, mid-week flights the most reliable for minimizing delays.
 
 ![Heatmap analysis of time of day](Heatmap.png)  
@@ -54,6 +53,39 @@ This project addresses 3 key questions:
   - **Younger planes** may be **more prone to operational issues** as they enter service, **leading to occasional delays.**
   - **Older planes** likely undergo **extensive maintenance and operational refinements**, contributing to **more reliable performance** despite their age.
 
-![Trendline of plane age by average delay](Boxplot.png)  
+![Trendline of plane age by average delay](Trendline.png)  
 
 *Scatterplot and Trendline showing relationship between Plane Age and Average Delay (Python and R implementation)*
+
+### 3. Can we predict the probability of flight diversions using logistic regression?
+- Built a **logistic regression model** using features:
+  - **CRSDepTime:** Planned departure time of flight,
+  - **CRSArrTime:** Planned Arrival time of flight,
+  - **Distance:** Euclidean distance between departure and arrival airports, calculated using their associated longitudinal and latititude coordinates.
+- **Key Findings:**
+  - **Scheduled Departure/Arrival Time** (CRSDepTime & CRSArrTime):
+    - **Earlier departures and arrivals** were associated with a **lower probability of diversion**.
+    - Likely due to **fewer weather disruptions and reduced air traffic** during early hours.
+  - **Flight Distance:**
+    - **Longer flights** had a **higher probability of diversion**.
+    - This may be due to **operational complexities** like fuel management and routing challenges.
+- These insights provide practical implications for scheduling - earlier, shorter flights are statistically less prone to diversions.
+
+---
+
+## Skills Used
+
+- **Programming Languages:** Python, R, SQLite
+- **Data Analysis & Visualization:** pandas, ggplot2, matplotlib, seaborn  
+- **Statistical Modeling:** Logistic Regression (statsmodels, glm in R)  
+- **Data Wrangling:** Grouping, aggregating, and filtering large datasets  
+- **Reproducible Reporting:** R Markdown, Jupyter Notebooks
+
+---
+
+## Files
+
+- Python code for this project can be accessed [here](), and R code [here]().
+- Written report for this project can be accessed [here]().
+
+
