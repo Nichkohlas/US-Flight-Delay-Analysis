@@ -85,7 +85,7 @@ This project addresses 3 key questions:
 
 ## Files
 
-- Python code for this project can be accessed [here](), and R code [here]().
+- Python code for this project can be accessed [here](ST2195_Part_2.ipynb), and R code [here]().
 - Written report for this project can be accessed [here]().
 
 
