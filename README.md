@@ -85,7 +85,7 @@ This project addresses 3 key questions:
 
 ## Files
 
-- Python code for this project can be accessed [here](ST2195_Part_2.ipynb), and R code [here]().
+- Python code for this project can be accessed [here](ST2195_Part_2.ipynb), and R code [here](https://nichkohlas.github.io/US-Flight-Delay-Analysis/).
 - Written report for this project can be accessed [here](ST2195_Final.pdf). **(View part 2 onwards)**
 
 
