@@ -38,11 +38,22 @@ This project addresses 3 key questions:
 
 - These patterns remained consistent across all years, making mid-morning, mid-week flights the most reliable for minimizing delays.
 
-![Heatmap analysis of time of day]()  
+![Heatmap analysis of time of day](Heatmap.png)  
 
 *Heatmap of Average Delays by Time of Week (Python and R implementation)* 
 
-![Boxplot analysis of day of week]()  
+![Boxplot analysis of day of week](Boxplot.png)  
 
 *Boxplot of Average Delays across Day of Week (Python and R implementation)*
 
+### 2. Do older aircraft experience more delays over time?
+- The **Correlation Coefficient between Plane Age and Average Delay** was **-0.39**, indicating a **moderate negative relationship** between these two variables.
+- A fitted trendline confirmed a **downward trend**:
+  - **Older planes tend to experience slightly lower Average Delays** compared to newer planes.
+- **Interpretation:**
+  - **Younger planes** may be **more prone to operational issues** as they enter service, **leading to occasional delays.**
+  - **Older planes** likely undergo **extensive maintenance and operational refinements**, contributing to **more reliable performance** despite their age.
+
+![Trendline of plane age by average delay](Boxplot.png)  
+
+*Scatterplot and Trendline showing relationship between Plane Age and Average Delay (Python and R implementation)*
